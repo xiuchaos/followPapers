@@ -72,15 +72,15 @@ You might suppose the foundation would be a shallow read of a large number of pa
 
 What you get from deep engagement with important papers is more significant than any single fact or technique: 
 
-* It helps you get a sense for what a powerful result in the field looks like. It helps you **imbibe the healthiest norms and standards** of the field.
-
+* It helps you **get a sense for what a powerful result** in the field looks like. 
+* It helps you **imbibe the healthiest norms and standards** of the field.
 * It helps you **internalize how to ask good questions** in the field, and how to put techniques together.
 	> Such things aren't captured individually by any single Anki question. But they begin to be captured collectively by the questions one asks when engaged deeply enough with key papers.
 
 * to get a picture of an entire field, I usually begin with a truly important paper, ideally a paper establishing a result that got me interested in the field in the first place.
-	+ I do a thorough read of that paper, along the lines of what I described for AlphaGo. 
-	+ Later, I do thorough reads of other key papers in the field – ideally, the best 5-10 papers 
-	+ Interspersed, I also do shallower reads of a much larger number of less important (though still good) papers, In my experimentation so far that means tens of papers...
+	+ I **do a thorough read of that paper, along the lines of what I described for AlphaGo**. 
+	+ Later, I **do thorough reads of other key papers** in the field – ideally, **the best 5-10 papers** 
+	+ Interspersed, I also **do shallower reads of a much larger number of less important** (though still good) papers, In my experimentation so far that means tens of papers...
 
 
 One surprising consequence of reading in this way is how much more enjoyable it becomes. I've always enjoyed reading, but starting out in a challenging new field was sometimes *a real slog*, and I was often *bedeviled by doubts that* I would ever really get into the field.
