@@ -5,11 +5,11 @@
 ## Resources - Tutorial
 [CVPR17 Tutorial: Deep Learning for Objects and Scenes ](http://deeplearning.csail.mit.edu/)
 
-[Part 1](https://www.youtube.com/watch?v=jHv37mKAhV4)
-[Part 2](https://www.youtube.com/watch?v=pK6XAk95kUY)
++ [Part 1](https://www.youtube.com/watch?v=jHv37mKAhV4)
++ [Part 2](https://www.youtube.com/watch?v=pK6XAk95kUY)
 
 [CVPR18 Tutorial: Visual Recognition and Beyond](http://cvpr2018.thecvf.com/program/tutorials)
-[Part 1](https://www.youtube.com/watch?v=m60uJVIE4Ys)
++ [Part 1](https://www.youtube.com/watch?v=m60uJVIE4Ys)
 
 
 ## Related 
@@ -35,8 +35,8 @@
 
 * very limited progress in exploiting contextual information
 	+ Spatial memory for context reasoning in object detection *ICCV 2017*
-	+ Object detection via a multiregion and semantic segmentation aware CNN model *ICCV 2015*
-	+ Relation networks for object detection *CVPR 2018*
+	+ [Object detection via a multiregion and semantic segmentation aware CNN model *ICCV 2015*](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Gidaris_Object_Detection_via_ICCV_2015_paper.pdf)
+	+ [Relation networks for object detection *CVPR 2018*](https://github.com/msracver/Relation-Networks-for-Object-Detection)
 
 
 
@@ -44,12 +44,12 @@
 Fully supervised learning has serious limitations: **not scalable in the absence of fully labelled training data**, therefore it is valuable to study how the power of CNNs can be leveraged in weakly supervised or unsupervised detection
 
 + Weakly supervised deep detection networks. *CVPR 2016*
-+ Weakly supervised cascaded convolutional networks *CVPR 2017*
++ [Weakly supervised cascaded convolutional networks *CVPR 2017*](https://www.csee.umbc.edu/~hpirsiav/papers/cascade_cvpr17.pdf)
 + Weakly supervised image annotation and segmentation with objects and attributes *TPAMI 2017*
 
 
 ### 3D Object Detection
-The depth modality can be employed to help object detection and recognition, however there is only limited work in this direction [30, 165, 220], 
+The depth modality can be employed to help object detection and recognition, however there is only limited work in this direction 
 
 + 3d object proposals for accurate object class detection. *NIPS 2015*
 + Beyond PASCAL: A benchmark for 3D object detection in the wild.
