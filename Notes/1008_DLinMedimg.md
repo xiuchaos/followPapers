@@ -43,11 +43,12 @@ still need to address issues specific to object detection:
 
 
 ### 3. segmentation
-Challenges:
-class imbalance,as most voxels/pixels in an image are from the non-diseased class.
-	> challenge that lesion segmentation shares with object detection
-	* 1. combat this by **adapting the loss function**: *Brosch 2016* defined it to be a weighted combination of the sensitivity and the specificity, with a larger weight for the specificity to make it less sensitive to the data imbalance. 
-	* 2. balance the data set by performing **data augmentation on positive samples** *Kamnitsas 2017; Litjens 2016; Pereira 2016*.
+C**class imbalance**,as most voxels/pixels in an image are from the non-diseased class.
+> challenge that lesion segmentation shares with object detection
+
+1. combat this by **adapting the loss function**: *Brosch 2016* defined it to be a weighted combination of the sensitivity and the specificity, with a larger weight for the specificity to make it less sensitive to the data imbalance. 
+
+2. balance the data set by performing **data augmentation on positive samples** *Kamnitsas 2017; Litjens 2016; Pereira 2016*.
 
 annoted training data:
 	* as the an notation burden to generate training data, **weakly-supervised deep learning** has been explored by *Hwang and Kim 2016*, who adopted such a strategy for the detection of nodules in chest radiographs and lesions in mammography.
@@ -136,3 +137,40 @@ Two novel unsupervised strategies that we expect to have an impact in medical im
 + The latter uses two competing convolutional neural networks where one is generating artificial data samples and the other is discriminating artificial from real samples. 
 	> Both have stochastic components and are generative networks. 
 
+
+
+#### Further Reading ----
+
+##### Inherent Data Imbalance
+1. training scheme
+	+ **vanGrinsven 2016** proposed a selective data sampling: wrongly classified samples were fed back to the network more often to focus on challenging areas in retinal images.
+	+ **Wang 2016b** hard negative mining 
+
+2. data augmentation
+	+ **Kamnitsas 2017; Litjens 2016; Pereira 2016.** balance the data set by performing data augmentation on positive samples 
+	+ **Pereira 2016** performed a thorough evaluation of data augmentation strategies for brain lesion segmentation to combat class imbalance.
+
+3. loss function
+	+ **Brosch 2016** combat this by adapting the loss function -- defined as a weighted combination of the sensitivity and the specificity, with a larger weight for the specificity to make it less sensitive to the data imbalance.
+
+
+##### Lack annoted training data
+1. **Hwang and Kim 2016** adopted weakly-supervised deep learning for the detection of nodules in chest radiographs and lesions in mammography.
+
+2. **Schlegl 2015** leveraged reports to improve image classification accuracy
+	+ large amounts of annotated data may be difficult to acquire and proposed to add semantic descriptions from reports as labels. 
+	+ optimally leveraging free-text and structured reports for network training. 
+
+
+3. **Shin 2016a** proposed a system to generate descriptions from chest X-rays.
+
+4. **Shin 2015, Wang 2016e** mined semantic interactions between radiology reports and images from a large data set. 
+	+ They employed latent Dirichlet allocation (LDA),a type of stochastic model that generates a distribution over a vocabulary of topics based on words in a document. 
+
+
+##### Unsupervised methods
+Two novel unsupervised strategies,both are generative networks and have stochastic components, that we expect to have an impact in medical imaging: 
++ (1)variational auto-encoders (VAEs) Kingma 2013, which merges variational Bayesian graphical models with neural networks as encoders/decoders; 
++ (2)generative adversarial networks(GANs) Goodfellow 2014, which uses two competing convolutional neural networks where one is generating artificial data samples and the other is discriminating artificial from real samples.
+
+**Kendall 2017** combine Bayesian statistics with deep networks to obtain true network uncertainty estimates. This would allow physicians to assess when the network is giving unreliable predictions.
