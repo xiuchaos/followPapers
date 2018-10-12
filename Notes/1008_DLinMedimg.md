@@ -141,7 +141,7 @@ Two novel unsupervised strategies that we expect to have an impact in medical im
 
 #### Further Reading ----
 
-##### Inherent Data Imbalance
+#### Inherent Data Imbalance
 1. training scheme
 	+ **vanGrinsven 2016** proposed a selective data sampling: wrongly classified samples were fed back to the network more often to focus on challenging areas in retinal images.
 	+ **Wang 2016b** hard negative mining 
@@ -154,7 +154,7 @@ Two novel unsupervised strategies that we expect to have an impact in medical im
 	+ **Brosch 2016** combat this by adapting the loss function -- defined as a weighted combination of the sensitivity and the specificity, with a larger weight for the specificity to make it less sensitive to the data imbalance.
 
 
-##### Lack annoted training data
+#### Lack annoted training data
 1. **Hwang and Kim 2016** adopted weakly-supervised deep learning for the detection of nodules in chest radiographs and lesions in mammography.
 
 2. **Schlegl 2015** leveraged reports to improve image classification accuracy
@@ -168,7 +168,7 @@ Two novel unsupervised strategies that we expect to have an impact in medical im
 	+ They employed latent Dirichlet allocation (LDA),a type of stochastic model that generates a distribution over a vocabulary of topics based on words in a document. 
 
 
-##### Unsupervised methods
+#### Unsupervised methods
 Two novel unsupervised strategies,both are generative networks and have stochastic components, that we expect to have an impact in medical imaging: 
 + (1)variational auto-encoders (VAEs) Kingma 2013, which merges variational Bayesian graphical models with neural networks as encoders/decoders; 
 + (2)generative adversarial networks(GANs) Goodfellow 2014, which uses two competing convolutional neural networks where one is generating artificial data samples and the other is discriminating artificial from real samples.
